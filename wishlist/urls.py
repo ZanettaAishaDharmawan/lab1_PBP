@@ -4,7 +4,7 @@ from wishlist.views import show_xml #sesuaikan dengan nama fungsi yang dibuat
 from wishlist.views import show_json #sesuaikan dengan nama fungsi yang dibuat
 from wishlist.views import show_json_by_id
 from wishlist.views import show_xml_by_id
-from wishlist.views import register, login_user, logout_user, create
+from wishlist.views import register, login_user, logout_user, submit
 
 app_name = 'wishlist'
 
@@ -18,5 +18,5 @@ urlpatterns = [
     path('register/', register, name='register'),
     path('login/', login_user, name='login'), 
     path('logout/', logout_user, name='logout'),
-    path('ajax/submit/',create, name='tbl-form'),
+    path('ajax/submit/',submit, name='tbl-form'),
 ]
